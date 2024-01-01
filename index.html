@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Sua Landing Page</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto text-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Nossos Serviços</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">Sobre Nós</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contato</a>
+      </li>
+    </ul>
+    <button class="btn btn-dark" id="darkModeToggle">Dark Mode</button>
+  </div>
+</nav>
+
+<!-- Conteúdo da Página usando Bootstrap Grid -->
+<div class="container mt-5">
+ 
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <h1 id="home">Bem-vindo à Nossa Landing Page</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6 content-container">
+      <!-- Div com o conteúdo "Lorem Ipsum" -->
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus nec libero porttitor sagittis. 
+        Integer vulputate orci vitae sapien pellentesque fermentum. Proin tincidunt finibus est. 
+        Donec et suscipit tellus, vel cursus turpis.
+      </p>
+      <button type="button" class="btn btn-light w-100"> Press here</button>
+    </div>
+  </div>
+
+  <!-- Adicionando a div com espaços para imagens -->
+  <div class="row image-container justify-content-center">
+    <img src="https://via.placeholder.com/100" alt="Imagem 1" class="img-fluid border-1">
+    <img src="https://via.placeholder.com/100" alt="Imagem 2" class="img-fluid border-2">
+    <img src="https://via.placeholder.com/100" alt="Imagem 3" class="img-fluid border-3">
+    <img src="https://via.placeholder.com/100" alt="Imagem 4" class="img-fluid border-1">
+    <img src="https://via.placeholder.com/100" alt="Imagem 5" class="img-fluid border-2">
+    <img src="https://via.placeholder.com/100" alt="Imagem 6" class="img-fluid border-3">
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js.js"></script>
+
+</body>
+</html>

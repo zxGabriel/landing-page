@@ -1,0 +1,63 @@
+ /* Paleta de Cores para Light Mode */
+ :root {
+    --light-primary: #007bff; /* Azul */
+    --light-secondary: #6c757d; /* Cinza */
+    --light-accent: #28a745; /* Verde */
+    --light-border: #343a40; /* Cor escura para bordas no Light Mode */
+  }
+
+  /* Paleta de Cores para Dark Mode */
+  body.dark-mode {
+    --dark-primary: #61dafb; /* Azul Claro */
+    --dark-secondary: #343a40; /* Cinza Escuro */
+    --dark-accent: #ffc107; /* Amarelo */
+    --dark-border: #f8f9fa; /* Cor clara para bordas no Dark Mode */
+    background: linear-gradient(to right, #6c757d, #343a40); /* Gradiente cinza escuro para preto no Dark Mode */
+    color: #ffffff;
+  }
+
+  body {
+    background: linear-gradient(to right, var(--light-primary), var(--light-secondary)); /* Gradiente azul claro para azul escuro no Light Mode */
+    opacity: 0.9; /* Opacidade do background */
+    transition: background 0.5s ease; /* Transição suave para a mudança de background */
+  }
+
+  .carousel-inner {
+    max-height: 300px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .content-container {
+    margin-top: 20px;
+  }
+  .image-container {
+    margin-top: 20px;
+  }
+  .image-container img {
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* Adiciona espaçamento entre as imagens */
+    transition: border-color 2s ease; /* Transição suave para a mudança de cor */
+  }
+  .image-container img:hover {
+    border-color: var(--light-accent); /* Cor do destaque ao passar o mouse */
+  }
+  .border-1 {
+    border: 5px solid var(--light-border); /* Cor da borda ajustada para a cor escura no Light Mode */
+  }
+  .border-2 {
+    border: 5px solid var(--light-border); /* Cor da borda ajustada para a cor escura no Light Mode */
+  }
+  .border-3 {
+    border: 5px solid var(--light-border); /* Cor da borda ajustada para a cor escura no Light Mode */
+  }
+  @media (max-width: 767px) {
+    body {
+      overflow-x: hidden;
+    }
+    .image-container img {
+      margin-right: 0; /* Remove o espaçamento entre as imagens em dispositivos móveis */
+      margin-bottom: 10px; /* Adiciona espaçamento inferior entre as imagens em dispositivos móveis */
+    }
+  }
